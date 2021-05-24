@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+</head>
+<body>
+
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>First Name</th>
+				<th>Middle Name</th>
+				<th>Last Name</th>
+				<th>email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="registrants : ${registrantsList}">
+				<td th:text="${registrants.firstName}"></td>
+				<td th:text="${registrants.lastName}"></td>
+				<td th:text="${registrants.email}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

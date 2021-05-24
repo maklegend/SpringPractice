@@ -1,0 +1,42 @@
+@charset "ISO-8859-1";
+
+/*
+   CSS is based around 'Selectors'. Selectors define which type of elements, or individual elements, you want to modify.
+   
+   {tag type} - Indicates you want to modify ALL tags of this type with the given specification
+   {#id}      - Indicates you want to modify an element with a specific id
+   {.class}   - The Class selector allows you to identify elements with a matching class attribute
+   
+   {parent tag descendant tag} - Will modify all explicitly defined descendant tags underneath the parent tag
+   		Example: div p {//do stuff} - Modifies all paragraph tags that are within a div tag
+   	
+   	{parent tag > child tag} - Will modify all tags that are explicit children of a parent tag
+   		Example: div > p {//do stuff}
+   		
+   	NOTE: A descendent is not necessarily a child:
+   	
+   				<div>
+   					<form> //a direct child & a descendant
+   						<p></p> //a descendant, but not a child
+   					</form>
+   				</div>
+   				
+   	{tag [attribute = attributeType]} - Selects all tags with a specific attribute (the attribute selector)
+   	{tag:characteristic} - The tag can be selected based on an implicit characteristic of the tag
+   	
+   	
+   	CSS & The Box Model
+   	
+   	Elements create boxes around themselves. There are 3 key properties you can influence with each element's box:
+   		
+   		1.- The border around the box (most borders are not visible, by default). We can control the width, style, & color of a box.
+   		2.- The padding (the space between the border of the box, and the content within the box). Padding pushes content inward, away from the border
+   		3.- The margin (the space between the element's border, and external elements around the box). Margin pushes the box away from other boxes.
+   		
+   
+*/
+
+body,html{
+	
+}
+
